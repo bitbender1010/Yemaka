@@ -1,0 +1,304 @@
+@font-face {
+    font-family: Poppins;
+    src: url(./Poppins/Poppins-Regular.ttf);
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Poppins;
+}
+
+
+
+.banner {
+    background: url("./images/doddle2.png");
+    background-color: rgba(29, 133, 222, 0.9);
+    background-blend-mode: overlay;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.yemaka img {
+    height: 30px;
+    width: auto;
+    margin-top: 10px;
+}
+
+.main_text {
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 80px;
+}
+
+.sub_text {
+    color: white;
+    font-size: 25px;
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 40px;
+}
+
+.get_early_access {
+    background-color: white;
+    color: #1D85DE;
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    /* margin-bottom: 400px; */
+    margin-bottom: 40%;
+    font-weight: bold;
+}
+
+.banner_screen_container {
+    position: relative;
+}
+
+/*Screens*/
+.screens {
+    display: flex;
+    /* margin: 0px 50px; */
+    align-items: center;
+    position: absolute;
+    /* top: 60%; */
+    top: calc(40% + 200px);
+}
+
+.screens div {
+    width: calc(100%/3);
+    height: auto;
+    /* border: 2px solid red; */
+}
+
+.screens .home img {
+    width: 100%;
+    height: auto;
+}
+
+.screens .lend img, .screens .borrow img {
+    width: 90%;
+    height: auto;
+}
+
+/*Get Early Access Form*/
+.early_access_container {
+    margin-top: 30%;
+}
+
+
+/*Sign Up*/
+/* .early_access_container {
+    background-color: gray;
+} */
+
+.signup_msg {
+    font-size: 30px;
+    width: 70%;
+    margin: 0px auto;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form_parent {
+    background-color: lightgray;
+    /* height: 100px; */
+    width: 50%;
+    margin: 0px auto;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.form_parent form input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-indent: 10px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.form_parent form label {
+    font-size: 20px;
+}
+
+.form_parent button {
+    background-color: #1D85DE;
+    color: white;
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/*Footer*/
+.footer {
+    padding: 0px 20px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+.footer_logo {
+    height: 30px;
+    width: auto;
+}
+
+.footer_images {
+    display: flex;
+    column-gap: 10px;
+}
+
+.footer_images div {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(107, 107, 107);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_images img {
+    height: 70%;
+    width: auto;
+}
+
+.address {
+    width: 300px;
+}
+
+/*Why Yemaka*/
+.why-text {
+    text-align: center;
+    width: 60%;
+    margin: 0px auto;
+}
+
+/* .yemaka_list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 60%;
+    margin: 0px auto;
+}
+
+.dot {
+    background-color: black;
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.dot_parent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.dot_text {
+    margin-right: 20px;
+} */
+
+.sp {
+    text-align: center;
+    width: 50%;
+    margin: 0px auto;
+    font-size: 20px;
+}
+
+.sp span::before {
+    content:'';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background-color:black;
+    position: relative;
+    top: -4px;
+}
+
+.sp span {
+    margin-right: 10px;
+}
+
+.whyyemaka {
+    margin-bottom: 100px;
+}
+
+
+
+/*Media Queries*/
+@media screen and (max-width: 800px) {
+    .main_text, .sub_text {
+        width: 80%;
+    }
+
+    .screens {
+        top: calc(40% + 250px);
+    }
+
+    .form_parent {
+        width: 80%;
+        margin: 0px 20px;
+    }
+
+    .sp {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    /* body {
+        background-color: red;
+    } */
+    .main_text, .sub_text, .signup_msg {
+        width: unset;
+        padding: 0px 20px;
+    }
+
+    .get_early_access {
+        margin-bottom: 300px;
+    }
+
+    .screens {
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        top: -230px;
+    }
+
+    .screens div {
+        width: 300px;
+    }
+
+    .screens .lend img, .screens .borrow img, .screens .home img {
+        width: 100%;
+        height: auto;
+    }
+
+    /*Get Early Access Form*/
+    .early_access_container {
+        margin-top: -30%;
+    }
+
+    .form_parent {
+        width: unset;
+        padding: 30px;
+    }
+}
