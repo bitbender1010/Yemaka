@@ -12,7 +12,7 @@ body {
 
 
 .banner {
-    background: url("./images/doddle2.png");
+    background: url("./images/doddle.png");
     background-color: rgba(29, 133, 222, 0.9);
     background-blend-mode: overlay;
     text-align: center;
@@ -63,18 +63,25 @@ body {
 }
 
 /*Screens*/
+.screen_parent {
+    display: flex;
+    justify-content: center;
+}
+
 .screens {
     display: flex;
     /* margin: 0px 50px; */
     align-items: center;
     position: absolute;
     /* top: 60%; */
-    top: calc(40% + 200px);
+    /* top: calc(40% + 200px); */
+    bottom: -25vw;
 }
 
 .screens div {
     width: calc(100%/3);
     height: auto;
+    max-width: 350px;
     /* border: 2px solid red; */
 }
 
@@ -90,9 +97,29 @@ body {
 
 /*Get Early Access Form*/
 .early_access_container {
-    margin-top: 30%;
+    margin-top: 35%;
 }
 
+/*3 screens*/
+.screens {
+    margin: 0px 10%;
+}
+
+.lend {
+    display: flex;
+    justify-content: right;
+}
+
+.borrow {
+    display: flex;
+    justify-content: left;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    padding: 0px 50px;
+}
 
 /*Sign Up*/
 /* .early_access_container {
@@ -126,6 +153,7 @@ body {
     text-indent: 10px;
     margin-bottom: 25px;
     margin-top: 10px;
+    font-size: 18px;
 }
 
 .form_parent form label {
@@ -146,12 +174,24 @@ body {
     margin-bottom: 50px;
 }
 
+select {
+    height: 45px;
+    width: 100%;
+    padding: 1px 5px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
 /*Footer*/
 .footer {
     padding: 0px 20px;
     margin-top: 150px;
     margin-bottom: 20px;
 }
+
 .footer_logo {
     height: 30px;
     width: auto;
@@ -165,7 +205,7 @@ body {
 .footer_images div {
     width: 30px;
     height: 30px;
-    border: 1px solid rgb(107, 107, 107);
+    border: 1.5px solid rgb(107, 107, 107);
     border-radius: 100px;
     display: flex;
     justify-content: center;
@@ -173,7 +213,7 @@ body {
 }
 
 .footer_images img {
-    height: 70%;
+    height: 60%;
     width: auto;
 }
 
@@ -248,9 +288,9 @@ body {
         width: 80%;
     }
 
-    .screens {
+    /* .screens {
         top: calc(40% + 250px);
-    }
+    } */
 
     .form_parent {
         width: 80%;
@@ -273,7 +313,7 @@ body {
     }
 
     .get_early_access {
-        margin-bottom: 300px;
+        margin-bottom: 350px;
     }
 
     .screens {
@@ -284,7 +324,12 @@ body {
     }
 
     .screens div {
-        width: 300px;
+        width: 250px;
+        margin-bottom: 100px
+    }
+
+    .borrow {
+        margin-bottom: 0px!important;
     }
 
     .screens .lend img, .screens .borrow img, .screens .home img {
@@ -299,6 +344,10 @@ body {
 
     .form_parent {
         width: unset;
-        padding: 30px;
+        padding: 20px;
+    }
+
+    .address {
+        width: 100%;
     }
 }

@@ -14,22 +14,25 @@
         <div class="yemaka"><img src="./images/logo.png"></div>
         <div class="main_text">Peer-To-Peer lending for Africans by Africans</div>
         <div class="sub_text"> Lend on your own terms or borrow at your own rate with flexible repayment plans all in one app</div>
-        <button class="get_early_access">Get Early Access</button>
+        <a href="#form"> <button class="get_early_access">Get Early Access</button> </a>
     </div>
 
     <!--App Screens-->
+    <div class="screen_parent">
     <div class="screens">
-        <div class="lend"> <img src="./images/lend.png"> </div>
-        <div class="home"> <img src="./images/home.png"> </div>
-        <div class="borrow"> <img src="./images/borrow.png"> </div>
+        <div class="lend"> <img src="./images/lendd.png"> </div>
+        <div class="home"> <img src="./images/homee.png"> </div>
+        <div class="borrow"> <img src="./images/borroww.png"> </div>
     </div>
+    </div>
+
 </div>
 
     <!--Why Yemaka-->
     <div class="early_access_container whyyemaka">
         <div class="signup_msg">Why Yemaka.app?</div>
         
-        <div class="sp">
+        <div class="sp" id="form">
             <span> Complete KYC</span>
             <span> Credit rating </span>
             <span> Loan calculator </span>
@@ -42,21 +45,26 @@
     </div>
 
     <!--Form-->
-    <div class="early_access_containe">
-        <div class="signup_msg">Sign up now to be the first to know when we launch</div>
+    <div>
+        <div class="signup_msg">Sign up now to be part of the community </div>
 
         <div class="form_parent">
-            <form>
+            <form name="Registration Details" method="POST" data-netlify="true">
                 <label>Full name</label>
-                <input>
+                <input type="text" name="name">
 
                 <label>Email Address</label>
-                <input>
+                <input type="email" name="email">
 
                 <label>Select the option that best describes you</label>
-                <input>
 
-                <button type="submit">Get Early Access</button>
+                <select name="Yemaka-Status" id="status">
+                    <option value="Borrower">Borrower</option>
+                    <option value="Lender">Lender</option>
+                    <option value="Both">Both</option>
+                  </select>
+
+                <button type="submit"> Join the community </button>
             </form>
         </div>
     </div>
@@ -66,9 +74,9 @@
         <img src="./images/footerLogo.png" class="footer_logo">
         <div class="address">651 N Broad St, New Castle, Delaware, United States</div>
         <div class="footer_images">
-            <div> <img src="./images/facebook-icon.svg"> </div>
-            <div> <img src="./images/twitter-icon.svg"> </div>
-            <div> <img src="./images/instagram-icon.svg"> </div>
+            <a href="https://www.facebook.com/Yemakaapp-106194555316052/"> <div> <img src="./images/facebook-icon.svg"> </div>  </a>
+            <a href="https://twitter.com/AppYemaka/"> <div> <img src="./images/twitter-icon.svg"> </div> </a>
+            <a href="https://www.instagram.com/yemaka.app/"> <div> <img src="./images/instagram-icon.svg"> </div> </a>
         </div>
     </div>
 </body>
