@@ -49,12 +49,14 @@
         <div class="signup_msg">Sign up now to be part of the community </div>
 
         <div class="form_parent">
-            <form name="Registration Details" method="POST" data-netlify="true">
+            <form name="Registration Details" method="POST" action="https://formsubmit.co/lahdedamz@email.com">
+                <input type="hidden" name="_subject" value="New submission!">
+                
                 <label>Full name</label>
-                <input type="text" name="name">
+                <input type="text" name="name" required>
 
                 <label>Email Address</label>
-                <input type="email" name="email">
+                <input type="email" name="email" required>
 
                 <label>Select the option that best describes you</label>
 
@@ -63,6 +65,9 @@
                     <option value="Lender">Lender</option>
                     <option value="Both">Both</option>
                   </select>
+
+                <!--Thank You Page-->
+                <input type="hidden" name="_next" value="https://yemaka.netlify.app/thanks.html">
 
                 <button type="submit"> Join the community </button>
             </form>

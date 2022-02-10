@@ -321,6 +321,7 @@ select {
         justify-content: center;
         position: relative;
         top: -230px;
+        width: 100%;
     }
 
     .screens div {
