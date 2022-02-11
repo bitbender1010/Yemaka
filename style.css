@@ -9,6 +9,10 @@ body {
     font-family: Poppins;
 }
 
+button {
+    cursor: pointer;
+}
+
 
 
 .banner {
@@ -21,7 +25,7 @@ body {
 }
 
 .yemaka img {
-    height: 30px;
+    height: 40px;
     width: auto;
     margin-top: 10px;
 }
@@ -190,6 +194,7 @@ select {
     padding: 0px 20px;
     margin-top: 150px;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .footer_logo {
@@ -284,6 +289,13 @@ select {
 
 /*Media Queries*/
 @media screen and (max-width: 800px) {
+
+    .yemaka img {
+        height: 30px;
+        width: auto;
+        margin-top: 10px;
+    }
+
     .main_text, .sub_text {
         width: 80%;
     }
@@ -351,4 +363,33 @@ select {
     .address {
         width: 100%;
     }
+}
+
+
+.float_bg {
+    /* background-color: red; */
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+}
+
+.float_bg div {
+    transform: rotateZ(90deg);
+    position: relative;
+    left: 126px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: #1D85DE;
+    color: white;
+}
+
+.float_img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
 }
